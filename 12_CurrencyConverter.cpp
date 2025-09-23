@@ -6,7 +6,7 @@ int main() {
     cout << "Enter amount in INR: ";
     cin >> inr;
 
-    cout << "\n💰 Currency Conversion from INR\n";
+    cout << "\n Currency Conversion from INR\n";
     cout << "---------------------------------\n";
     cout << "USD = " << inr / 83.0 << endl;
     cout << "EUR = " << inr / 90.0 << endl;
@@ -21,3 +21,4 @@ int main() {
 
     return 0;
 }
+

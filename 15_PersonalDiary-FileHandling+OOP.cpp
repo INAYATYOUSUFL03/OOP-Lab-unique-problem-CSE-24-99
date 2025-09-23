@@ -13,13 +13,13 @@ public:
         getline(cin, entry);
         out << entry << endl;
         out.close();
-        cout << "✅ Entry saved!\n";
+        cout << " Entry saved!\n";
     }
 
     void viewEntries() {
         ifstream in("diary.txt");
         string line;
-        cout << "\n📖 Your Diary Entries:\n";
+        cout << "\n Your Diary Entries:\n";
         while(getline(in, line)) {
             cout << "- " << line << endl;
         }
@@ -39,9 +39,10 @@ int main() {
         switch(choice) {
             case 1: d.addEntry(); break;
             case 2: d.viewEntries(); break;
-            case 3: cout << "👋 Exiting Diary. Take care!\n"; break;
+            case 3: cout << " Exiting Diary. Take care!\n"; break;
             default: cout << "Invalid choice!\n";
         }
     } while(choice!=3);
     return 0;
 }
+
